@@ -1,0 +1,8 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "scripts": {
+    "gen": "node ./scripts/generate-filelist.js"
+  },
+  "license": "MIT"
+}
