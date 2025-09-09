@@ -284,3 +284,13 @@
         @media (prefers-reduced-motion: reduce) {
             .blob, .file-item, .download-btn, .copy-cmd { transition: none !important; animation: none !important; transform: none !important; }
         }
+
+    /* Footer styles */
+    .footer { text-align: left; margin-top: 2.5rem; color: var(--text-muted); font-size: 0.95rem; }
+    .footer-main { display:flex; gap:2rem; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; }
+    .footer-main h3 { margin:0 0 0.25rem 0; color: var(--text); }
+    .footer-links { display:flex; gap:0.6rem; flex-wrap:wrap; margin:0.6rem 0; }
+    .footer-links a { color: var(--accent-1); text-decoration:none; border:1px solid transparent; padding:0.25rem 0.5rem; border-radius:6px; background:transparent; }
+    .footer-links a:hover { background: linear-gradient(90deg,var(--accent-1),var(--accent-2)); color:white; box-shadow: 0 6px 20px rgba(255,51,102,0.12); }
+    .legal-links a { color: var(--text-muted); text-decoration:underline; margin-right:0.6rem; }
+    .footer-note { margin-top:1rem; }
