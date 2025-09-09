@@ -221,6 +221,22 @@
             z-index: 0; 
             overflow: hidden;
         }
+
+        /* Interactive canvas for mouse-reactive lines/stars */
+        .interactive-canvas {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            width: calc(100% - 24px);
+            height: 220px;
+            border-radius: 12px;
+            z-index: 0;
+            pointer-events: none; /* let mouse events pass to content */
+            display: block;
+        }
+
+        /* Ensure content sits above the canvas */
+        .container > *:not(.interactive-canvas) { position: relative; z-index: 1; }
         
         .accent-line {
             position: absolute;
