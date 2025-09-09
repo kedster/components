@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="512" height="512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <rect width="512" height="512" fill="url(#grad)" rx="64" ry="64"/>
-  <path d="M 128,256 L 224,160 L 288,160 L 192,256 L 288,352 L 224,352 L 128,256 Z M 288,256 L 384,160 L 448,160 L 352,256 L 448,352 L 384,352 L 288,256 Z" fill="white"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?><svg width="512" height="512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><rect width="512" height="512" fill="#FF3366" fill-opacity="0.333" rx="64" ry="64"/><path d="M 128,256 L 224,160 L 288,160 L 192,256 L 288,352 L 224,352 L 128,256 Z M 288,256 L 384,160 L 448,160 L 352,256 L 448,352 L 384,352 L 288,256 Z" fill="white"/></svg>
