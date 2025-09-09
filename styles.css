@@ -65,6 +65,30 @@
             filter: drop-shadow(0 6px 18px rgba(6,182,212,0.08));
         }
 
+        /* GitHub badge */
+        .github-badge {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            width: 34px;
+            height: 34px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            background: transparent;
+            border-radius: 6px;
+            transition: transform 160ms ease, color 160ms ease, background 160ms ease;
+            z-index: 2;
+        }
+
+        .github-badge:hover {
+            transform: translateY(-4px) scale(1.04);
+            color: white;
+            background: linear-gradient(90deg,var(--accent-1),var(--accent-2));
+            box-shadow: 0 8px 24px rgba(255,51,102,0.12);
+        }
+
         .file-list {
             display: grid;
             gap: 1rem;

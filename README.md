@@ -1,36 +1,67 @@
-Component Downloads
+webcomponents.snap-view.com — Component downloads
 
-This folder contains small front-end components packaged as ZIPs in the `Parts/` directory. The site `index.html` lists available downloads and provides quick "how to" sections.
+This repository contains small, reusable front-end components packaged as ZIP files in the `Parts/` directory. The site `index.html` lists available packages and provides guidance for local use and remote download.
 
-Quick features
+What you'll find
+- ZIP packages for components (in `Parts/`)
+- A simple browser UI (`index.html`) showing local and remote download links
+- A Node helper to generate `filelist.json` from the `Parts/` directory
 
-- Local and remote download buttons for each file.
-- Expandable usage instructions: VS Code, with AI, manual usage.
-- Remote download commands (PowerShell, curl, wget) with copy buttons.
-- Runtime remote HEAD checks to show whether a file is available at the remote domain.
+Quick start (local)
+1. Open the project folder in your editor (for example, VS Code).
+2. Open `index.html` in a browser or run a simple local server from the project root:
 
-Remote hosting
+```powershell
+python -m http.server 8000
+# then open http://localhost:8000/
+```
 
-Files are expected to be available at:
+Remote downloads
+The files are expected to be hosted at the public base:
 
 https://webcomponents.snap-view.com/Parts/<filename.zip>
 
-Replace `<filename.zip>` with the exact filename shown for each item.
+Replace `<filename.zip>` with the filename listed on the page. Examples:
 
-PowerShell example
+PowerShell (Windows PowerShell 5.1)
 
+```powershell
 Invoke-WebRequest -Uri "https://webcomponents.snap-view.com/Parts/<filename.zip>" -OutFile "<filename.zip>"
+# Example
+Invoke-WebRequest -Uri "https://webcomponents.snap-view.com/Parts/badgeloader.zip" -OutFile "badgeloader.zip"
+```
 
-curl example
+curl (Linux / macOS / Windows with curl)
 
+```bash
 curl -L -o <filename.zip> "https://webcomponents.snap-view.com/Parts/<filename.zip>"
+# Example
+curl -L -o badgeloader.zip "https://webcomponents.snap-view.com/Parts/badgeloader.zip"
+```
 
-wget example
+wget (POSIX shell)
 
+```bash
 wget -O <filename.zip> "https://webcomponents.snap-view.com/Parts/<filename.zip>"
+# Example
+wget -O badgeloader.zip "https://webcomponents.snap-view.com/Parts/badgeloader.zip"
+```
 
-Automation
+Automation: regenerate `filelist.json`
+Use the Node script to scan `Parts/` and write `filelist.json` (used by `index.html` at runtime):
 
-A small Node script `scripts/generate-filelist.js` can scan the `Parts/` directory and generate `filelist.json`. Use `npm run gen` to run it.
+```powershell
+node ./scripts/generate-filelist.js
+# or: npm run gen
+```
 
-License: MIT
+Notes
+- Ensure filenames and casing in `Parts/` match what you reference remotely.
+- The site will try to load `filelist.json` at runtime; if it's not present it falls back to a built-in list.
+
+Contributing
+- Add new component ZIPs to the `Parts/` directory. Run the generator to update `filelist.json`.
+- If you add a component, include a short README inside the ZIP explaining usage and license.
+
+License
+This project is provided under the MIT License.
