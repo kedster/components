@@ -74,7 +74,7 @@
             <h2>How to use these files</h2>
             <p>Each item is a zip containing the component sources and a short README inside. Expand the sections below for quick guides.</p>
 
-            <details>
+            <details class="instruction-card vscode">
                 <summary>Using these files in VS Code</summary>
                 <ol>
                     <li>Open this folder in VS Code: <code>File → Open Folder...</code>.</li>
@@ -84,26 +84,26 @@
                 </ol>
             </details>
 
-            <details>
+            <details class="instruction-card ai">
                 <summary>Using with AI (examples)</summary>
                 <p>Use the snippets inside the zips as context for an AI assistant. Example prompt:</p>
                 <pre><code>"I have a component called Badge Loader. Explain how to integrate its CSS and JS into an existing HTML page and provide a small usage example."</code></pre>
                 <p>Or ask for code transformations, accessibility improvements, or test cases.</p>
             </details>
 
-            <details>
+            <details class="instruction-card manual">
                 <summary>Using without AI (manual)</summary>
                 <p>Open the extracted folder, read the bundled README.md, then copy the necessary files (CSS, JS, images) into your project and include them in your HTML:</p>
                 <pre><code>&lt;link rel="stylesheet" href="path/to/component.css"&gt;
 &lt;script src="path/to/component.js" defer&gt;&lt;/script&gt;</code></pre>
             </details>
 
-            <details>
+            <details class="instruction-card notes">
                 <summary>Notes about where files are served from</summary>
                 <p>This page links ZIPs from the repository <code>Parts/</code> folder. If a download fails, check that the file exists in that folder or update the path in <code>script.js</code>.</p>
             </details>
 
-            <details open>
+            <details class="instruction-card remote" open>
                 <summary>Download remotely (PowerShell, curl, bash)</summary>
                 <p>Files are expected to be available at <code>https://webcomponents.snap-view.com/Parts/&lt;filename&gt;</code>. Replace <code>&lt;filename&gt;</code> with the exact file name shown in the list.</p>
 
