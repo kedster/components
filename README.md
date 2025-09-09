@@ -13,21 +13,21 @@ Remote hosting
 
 Files are expected to be available at:
 
-https://comopnets.snap-view.com/Parts/<filename.zip>
+https://webcomponents.snap-view.com/Parts/<filename.zip>
 
 Replace `<filename.zip>` with the exact filename shown for each item.
 
 PowerShell example
 
-Invoke-WebRequest -Uri "https://comopnets.snap-view.com/Parts/<filename.zip>" -OutFile "<filename.zip>"
+Invoke-WebRequest -Uri "https://webcomponents.snap-view.com/Parts/<filename.zip>" -OutFile "<filename.zip>"
 
 curl example
 
-curl -L -o <filename.zip> "https://comopnets.snap-view.com/Parts/<filename.zip>"
+curl -L -o <filename.zip> "https://webcomponents.snap-view.com/Parts/<filename.zip>"
 
 wget example
 
-wget -O <filename.zip> "https://comopnets.snap-view.com/Parts/<filename.zip>"
+wget -O <filename.zip> "https://webcomponents.snap-view.com/Parts/<filename.zip>"
 
 Automation
 

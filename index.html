@@ -8,9 +8,24 @@
 </head>
 <body>
     <div class="container">
+        <div class="background-visuals" aria-hidden="true">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
         <header class="site-header">
             <h1>Component Downloads</h1>
             <p class="tagline">Small front-end components and starter packs you can download and drop into your projects.</p>
+            <svg class="header-flourish" width="240" height="24" viewBox="0 0 240 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M2 12 C40 0, 80 24, 120 12 S200 0, 238 12" stroke="url(#g)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                <defs>
+                    <linearGradient id="g" x1="0" x2="1">
+                        <stop offset="0%" stop-color="#7c3aed" />
+                        <stop offset="50%" stop-color="#06b6d4" />
+                        <stop offset="100%" stop-color="#34d399" />
+                    </linearGradient>
+                </defs>
+            </svg>
         </header>
 
         <section class="file-list" id="fileList" aria-live="polite">
@@ -52,30 +67,30 @@
 
             <details open>
                 <summary>Download remotely (PowerShell, curl, bash)</summary>
-                <p>Files are expected to be available at <code>https://comopnets.snap-view.com/Parts/&lt;filename&gt;</code>. Replace <code>&lt;filename&gt;</code> with the exact file name shown in the list.</p>
+                <p>Files are expected to be available at <code>https://webcomponents.snap-view.com/Parts/&lt;filename&gt;</code>. Replace <code>&lt;filename&gt;</code> with the exact file name shown in the list.</p>
 
                 <h4>PowerShell (Windows PowerShell 5.1)</h4>
                 <div class="cmd-block">
-                    <pre><code id="ps-cmd">Invoke-WebRequest -Uri "https://comopnets.snap-view.com/Parts/&lt;filename.zip&gt;" -OutFile "&lt;filename.zip&gt;"
+                    <pre><code id="ps-cmd">Invoke-WebRequest -Uri "https://webcomponents.snap-view.com/Parts/&lt;filename.zip&gt;" -OutFile "&lt;filename.zip&gt;"
 # Example
-Invoke-WebRequest -Uri "https://comopnets.snap-view.com/Parts/badgeloader.zip" -OutFile "badgeloader.zip"</code></pre>
-                    <button class="copy-cmd" data-command='Invoke-WebRequest -Uri "https://comopnets.snap-view.com/Parts/<filename.zip>" -OutFile "<filename.zip>"'>Copy PowerShell</button>
+Invoke-WebRequest -Uri "https://webcomponents.snap-view.com/Parts/badgeloader.zip" -OutFile "badgeloader.zip"</code></pre>
+                    <button class="copy-cmd" data-command='Invoke-WebRequest -Uri "https://webcomponents.snap-view.com/Parts/<filename.zip>" -OutFile "<filename.zip>"'>Copy PowerShell</button>
                 </div>
 
                 <h4>curl (Linux, macOS, Windows)</h4>
                 <div class="cmd-block">
-                    <pre><code id="curl-cmd">curl -L -o &lt;filename.zip&gt; "https://comopnets.snap-view.com/Parts/&lt;filename.zip&gt;"
+                    <pre><code id="curl-cmd">curl -L -o &lt;filename.zip&gt; "https://webcomponents.snap-view.com/Parts/&lt;filename.zip&gt;"
 # Example
-curl -L -o badgeloader.zip "https://comopnets.snap-view.com/Parts/badgeloader.zip"</code></pre>
-                    <button class="copy-cmd" data-command='curl -L -o <filename.zip> "https://comopnets.snap-view.com/Parts/<filename.zip>"'>Copy curl</button>
+curl -L -o badgeloader.zip "https://webcomponents.snap-view.com/Parts/badgeloader.zip"</code></pre>
+                    <button class="copy-cmd" data-command='curl -L -o <filename.zip> "https://webcomponents.snap-view.com/Parts/<filename.zip>"'>Copy curl</button>
                 </div>
 
                 <h4>wget / POSIX shell</h4>
                 <div class="cmd-block">
-                    <pre><code id="wget-cmd">wget -O &lt;filename.zip&gt; "https://comopnets.snap-view.com/Parts/&lt;filename.zip&gt;"
+                    <pre><code id="wget-cmd">wget -O &lt;filename.zip&gt; "https://webcomponents.snap-view.com/Parts/&lt;filename.zip&gt;"
 # Example
-wget -O badgeloader.zip "https://comopnets.snap-view.com/Parts/badgeloader.zip"</code></pre>
-                    <button class="copy-cmd" data-command='wget -O <filename.zip> "https://comopnets.snap-view.com/Parts/<filename.zip>"'>Copy wget</button>
+wget -O badgeloader.zip "https://webcomponents.snap-view.com/Parts/badgeloader.zip"</code></pre>
+                    <button class="copy-cmd" data-command='wget -O <filename.zip> "https://webcomponents.snap-view.com/Parts/<filename.zip>"'>Copy wget</button>
                 </div>
 
                 <p>Notes:</p>

@@ -14,7 +14,7 @@ const availableFiles = [
 ];
 
 // Remote base domain where Parts are hosted (per your request)
-const remoteBase = 'https://comopnets.snap-view.com/Parts/';
+const remoteBase = 'https://webcomponents.snap-view.com/Parts/';
 
 // Try to load a generated filelist.json from the repo root (automation) and fall back to `availableFiles`.
 async function loadFileList() {
